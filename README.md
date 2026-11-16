@@ -37,7 +37,7 @@ O repositório disponibiliza o patcher e as fotos. A ROM original continua em `d
 ## Créditos
 
 - **Tradução original para PT-BR** por [Hyllian](https://romsportugues.com/tradutor/hyllian/) e [Odin](https://romsportugues.com/tradutor/odin/).
-- **Adaptação para PSP** por Bruno. O trabalho consistiu em reaproveitar a tradução pronta da Redux T1.8 e adaptá-la ao port de PSP, que usa a ROM USA NTSC 1.0 como base.
+- **Adaptação para PSP** por [Bruno Ferreira](https://github.com/bruninho182). O trabalho consistiu em reaproveitar a tradução pronta da Redux T1.8 e adaptá-la ao port de PSP, que usa a ROM USA NTSC 1.0 como base.
 - **Port nativo para PSP** por [z2442 e colaboradores](https://github.com/z2442/oot-PSP).
 - **Referência para o formato dos arquivos do port** no [patcher italiano de noname8723](https://github.com/noname8723/oot-psp-italian), baseado no [patcher espanhol de Unbekantte](https://github.com/Unbekantte/oot-psp-spanish-patcher).
 
