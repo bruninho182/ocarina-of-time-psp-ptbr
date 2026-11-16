@@ -1,8 +1,8 @@
 # Ocarina of Time PSP em português brasileiro
 
-Adaptação dos diálogos da tradução brasileira de **Ocarina of Time Redux T1.8** para o port nativo de PSP do **z2442**, versão **1.0**. O patch inclui a fonte usada na tradução e importa 2.115 entradas do banco de mensagens. Os diálogos iniciais foram conferidos em um PSP real. Menus, botões e textos em imagens podem continuar em inglês.
+![Link, um PSP verde e a bandeira do Brasil](https://raw.githubusercontent.com/bruninho182/bruninho182/main/ocarina-psp-ptbr-banner.png)
 
-![A Árvore Deku conversa com Navi em português na tela de um PSP verde](arvore-deku.png)
+Adaptação dos diálogos da tradução brasileira de **Ocarina of Time Redux T1.8** para o port nativo de PSP do **z2442**, versão **1.0**. O patch inclui a fonte usada na tradução e importa 2.115 entradas do banco de mensagens. Os diálogos iniciais foram conferidos em um PSP real. Menus, botões e textos em imagens podem continuar em inglês.
 
 ## Como instalar
 
@@ -27,6 +27,8 @@ O repositório disponibiliza o patcher e as fotos. A ROM original continua em `d
 | Redux T1.8 PT-BR (campanha normal) | `49183ac38c714be6dCDD968db436b860` |
 
 ## Fotos no PSP
+
+![A Árvore Deku conversa com Navi em português na tela de um PSP verde](arvore-deku.png)
 
 | Introdução | Saria | Floresta Kokiri |
 | --- | --- | --- |
