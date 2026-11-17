@@ -124,17 +124,25 @@ def patch(port, output, original, translated):
     print(f"Arquivos modificados gerados em {output}")
 
 
-def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("port", type=Path, nargs="?", help="Pasta da instalação em inglês, após o primeiro boot")
-    args = parser.parse_args()
-    original = resources(load_rom(CLEAN))
-    translated = resources(load_rom(REDUX))
+def prepare_roms(clean_rom, translated_rom):
+    require(hashlib.md5(clean_rom).hexdigest() == CLEAN, "Selecione a ROM original USA NTSC 1.0 em formato .z64.")
+    require(hashlib.md5(translated_rom).hexdigest() == REDUX, "Selecione a ROM Redux T1.8 em PT-BR da campanha normal.")
+    original = resources(clean_rom)
+    translated = resources(translated_rom)
     bank, _, rows = translated
     require([row[0] for row in original[2]] == [row[0] for row in rows],
             "Os IDs da tradução diferem dos IDs da ROM original.")
     require(len(bank) <= JP_SIZE, "O banco traduzido excede o espaço disponível.")
     psp_table(rows, bank, JP_OFFSET)
+    return original, translated
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("port", type=Path, nargs="?", help="Pasta da instalação em inglês, após o primeiro boot")
+    args = parser.parse_args()
+    original, translated = prepare_roms(load_rom(CLEAN), load_rom(REDUX))
+    bank, _, rows = translated
     print(f"ROMs verificadas: {len(rows)} entradas, {len(bank)} bytes de diálogos.")
     if args.port:
         patch(args.port, ROOT / "saida-ptbr", original, translated)

@@ -4,7 +4,16 @@
 
 Adaptação dos diálogos da tradução brasileira de **Ocarina of Time Redux T1.8** para o port nativo de PSP do **z2442**, versão **1.0**. O patch inclui a fonte usada na tradução e importa 2.115 entradas do banco de mensagens. Os diálogos iniciais foram conferidos em um PSP real. Menus, botões e textos em imagens podem continuar em inglês.
 
-## Como instalar
+## Como instalar pelo Windows
+
+Baixe o **[Ocarina-PSP-PTBR.exe](Ocarina-PSP-PTBR.exe?raw=true)** para Windows 64 bits. O executável inclui o ambiente Python.
+
+1. Instale o [port de PSP 1.0](https://github.com/z2442/oot-PSP/releases/tag/1.0) com a ROM original como `data/baserom.z64`. Inicie o jogo em inglês uma vez para gerar `data/segments/oot_psp_assets.bin` e feche o jogo.
+2. Abra o executável e selecione a ROM **USA NTSC 1.0** e a ROM **Redux T1.8 em PT-BR** da campanha normal, ambas em formato `.z64`.
+3. Selecione a pasta do port que contém o `EBOOT.PBP` e a pasta onde deseja salvar o resultado. Clique em **Gerar arquivos PT-BR**.
+4. Faça backup dos arquivos originais no PSP. Copie `EBOOT.PBP` e `data/segments/oot_psp_assets.bin` da pasta `saida-ptbr` para os mesmos caminhos na pasta do jogo.
+
+## Alternativa pelo terminal
 
 Você vai precisar de **Python 3**, do [port de PSP 1.0](https://github.com/z2442/oot-PSP/releases/tag/1.0), da ROM de N64 **USA NTSC 1.0 em formato big-endian** e da ROM **Redux T1.8 em PT-BR** da campanha normal. O patcher reconhece as duas ROMs pelo MD5. A edição Master Quest usa outro arquivo.
 
